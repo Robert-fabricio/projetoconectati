@@ -1,0 +1,47 @@
+Integrantes
+Gabriel Arias
+
+Robert Fabrício
+
+Marcelo Alexandrino
+
+Nycollas Baldim
+
+Apresentação do Projeto
+O ConectaT.I é uma iniciativa desenvolvida com o propósito de promover a inclusão de pessoas no mercado de trabalho, especialmente aquelas em busca de oportunidades de estágio ou de uma primeira experiência profissional. 
+Através de uma plataforma digital moderna e intuitiva, buscamos aproximar candidatos e empresas, criando um ambiente favorável para que ambos possam estabelecer contato, negociar oportunidades e preencher suas respectivas necessidades.
+Nosso projeto propõe um espaço acessível e dinâmico, onde os usuários poderão interagir de forma prática e eficiente. 
+A proposta central é funcionar como um canal de comunicação entre empresas que necessitam de mão de obra inicial e candidatos interessados em ingressar no mercado de trabalho, oferecendo ferramentas que tornem essa experiência
+mais ágil, personalizada e funcional.
+
+	Como Funciona ?
+		O acesso ao ConectaT.I será feito por meio de um site especialmente estruturado para atender tanto os candidatos quanto as empresas parceiras. 
+		Os interessados em participar do processo poderão acessar a plataforma, preencher formulários específicos com seus dados e preferências, e a partir dessas informações, terão acesso a uma seção exclusiva de Grids, 
+		onde estarão disponíveis as vagas mais compatíveis com seu perfil.
+		De forma paralela, as empresas terão à disposição um ambiente próprio para divulgar suas demandas por novos colaboradores, descrevendo suas vagas e especificando os critérios necessários para
+ 		o preenchimento das mesmas. Dessa maneira, empresa e candidato poderão estabelecer contato direto, otimizando o tempo de busca e facilitando a seleção de acordo com o interesse de ambas as partes.
+		Um dos diferenciais da plataforma é a incorporação de botões interativos desenvolvidos em Script, que permitem aos usuários realizar funções práticas durante a navegação no site, como, por exemplo,
+		calcular salários de forma automatizada e interagir dinamicamente com os conteúdos disponíveis.
+
+	Recursos e Diferenciais
+
+		O ConectaT.I se destaca pela oferta de uma série de recursos pensados para tornar a experiência de empresas e candidatos ainda mais completa e eficiente:.
+		Seção de formulários personalizados para cadastro, coleta de informações e candidatura às vagas.
+		Grids organizados para que os candidatos possam visualizar as oportunidades disponíveis de maneira clara e segmentada.
+		Botões interativos em Script integrados ao site, que proporcionam uma navegação dinâmica e funcionalidades adicionais como cálculo de salário.
+		Calculadoras funcionais incorporadas à plataforma, facilitando o planejamento e a tomada de decisões por parte dos candidatos.
+		Informações detalhadas sobre a estrutura física do projeto, incluindo:
+		- Endereço completo do auditório, onde são realizados encontros e eventos de integração entre empresas e candidatos.
+		- Localização precisa no mapa, possibilitando fácil acesso ao espaço para participação em palestras, entrevistas e demais atividades.
+
+	Apresentação visual do projeto com:
+
+		Imagens da equipe de desenvolvimento
+		Identidade visual bem definida, com as cores da marca aplicadas ao site e aos materiais de divulgação.
+		Tabelas organizadas e objetivas, que facilitam a leitura e compreensão das informações apresentadas.
+
+	Sobre a Equipe:
+
+	O desenvolvimento do ConectaT.I é resultado do trabalho colaborativo de um grupo multidisciplinar, composto por Designers, Tradutores e Desenvolvedores.
+ 	Cada integrante contribuiu de maneira significativa para a construção da plataforma, desde a concepção visual até a implementação das funcionalidades técnicas, garantindo um produto final de qualidade, bem estruturado e 
+	alinhado com os objetivos propostos.

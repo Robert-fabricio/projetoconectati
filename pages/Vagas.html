@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vagas - ConectaTI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #d9e6f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+      font-size: 30px;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 450px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 300px;
+      }
+    }
+
+    header,
+    footer {
+      text-align: center;
+      background-color: #005b96;
+      color: #fff;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    .conteudo {
+      flex: 1;
+      padding: 20px;
+      background-color: #d9e6f7;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+     h1.home {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #005b96;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0.25rem;
+      width: auto;
+      max-width: 250px;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    .Desenvolvido {
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+    footer button {
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #005b96;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+    /* escopo principal */
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 40px;
+    }
+    /* fim do escopo principal */
+  </style>
+  
+</head>
+<body>
+  <header>
+    <button type="button" onclick="voltar()">
+      <h1 class="home">ConectaTI</h1>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="../pages/Vagas.html">Vagas</a></li>
+        <li><a href="../pages/Parceiros.html">Parceiros</a></li>
+        <li><a href="../pages/cadastro.html">Cadastro</a></li>
+        <li><a href="../pages/localizacao.html">Localização</a></li>
+        <li><a href="../pages/Simulador.html">Landing Page</a></li>
+        <li><a href="../pages/Simulador.html">Simulador</a></li>
+        <li><a href="../pages/Sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="conteudo">
+  <h2>Vagas Disponíveis</h2>
+  <table border ="3">
+    <tr>
+      <th>Empresas</th>
+      <th>Vagas</th>
+      <th>Tipo</th>
+      <th>Cidade</th>
+      <th>Salário</th>
+      <th>Número de vagas</th>
+    </tr>
+    <tr>
+      <td>Microsoft</td>
+      <td>Estágio em Front-end</td>
+      <td>Estágio</td>
+      <td>Contagem - MG</td>
+      <td>R$ 1.200</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>DevSolutions</td>
+      <td>Analista Júnior</td>
+      <td>CLT</td>
+      <td>Contagem - MG</td>
+      <td>R$ 3.000</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4infra</td>
+      <td>Analista de Banco de dados</td>
+      <td>CLT</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 4.386</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Red Bull</td>
+      <td>Coordenador de TI</td>
+      <td>PJ</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 8.350 </td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Itaú</td>
+      <td>QA Analista de testes</td>
+      <td>PJ</td>
+      <td>Betim - MG</td>
+      <td>R$ 6.221</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>TechSolutions</td>
+      <td>Desenvolvedor back-end</td>
+      <td>CLT</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 5.093</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>InovaTI</td>
+      <td>Arquiteto de Cloud</td>
+      <td>Estágio</td>
+      <td>Nova Lima - MG</td>
+      <td>R$ 6.933</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Totvs</td>
+      <td>Engenheiro de Dados</td>
+      <td>PJ</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 11.920</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Bradesco</td>
+      <td>Engenheiro de software</td>
+      <td>Estágio</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 7.500</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Fumec</td>
+      <td>Professor de Ciência da Computação</td>
+      <td>CLT</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 20.000</td>
+      <td>5</td>
+    </tr> 
+    <tr>
+      <td>Banco Inter</td>
+      <td>Desenvolvedor Mobile</td>
+      <td>CLT</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 8.000</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Grupo Boticário</td>
+      <td>Especialista em Segurança da Informação</td>
+      <td>PJ</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 9.500</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Movile</td>
+      <td>Gerente de Projetos de TI</td>
+      <td>CLT</td>
+      <td>Belo Horizonte - MG</td>
+      <td>R$ 10.000</td>
+      <td>2</td>
+  </table>
+  <button onclick="pagina_calcular()">Calcule seu salário aqui</button>
+  </div>
+
+  
+  <script>
+    function pagina_calcular(){
+      window.location.href = "../pages/pagina06.html"
+    }
+    function voltar() {
+        window.location.href = "../index.html";
+        alert("Voltando para a página principal ...")
+      }
+  </script>
+  <footer>
+    <p>ConectaTI 2025 - Todos os Direitos Reservados</p>
+    <button type="button" onclick="voltar()">Voltar para a página principal</button>
+    <p class="Desenvolvido">Desenvolvido por alunos da Fumec</p>
+  </footer>
+</body>
+</html>

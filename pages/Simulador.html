@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Salário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #d9e6f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 450px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 300px;
+      }
+    }
+
+    header,
+    footer {
+      text-align: center;
+      background-color: #005b96;
+      color: #fff;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    .conteudo {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+     h1.home {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #005b96;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0.25rem;
+      width: auto;
+      max-width: 250px;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+    .Desenvolvido {
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+    footer button {
+      margin-top: 10px;
+    }
+
+    form {
+      text-align: center;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 91, 150, 0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .conteudo {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      color: #000;
+      background-color: #d9e6f7;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button type="button" onclick="voltar()">
+      <h1 class="home">ConectaTI</h1>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="../pages/Vagas.html">Vagas</a></li>
+        <li><a href="../pages/Parceiros.html">Parceiros</a></li>
+        <li><a href="../pages/cadastro.html">Cadastro</a></li>
+        <li><a href="../pages/localizacao.html">Localização</a></li>
+        <li><a href="../pages/Simulador.html">Landing Page</a></li>
+        <li><a href="../pages/Simulador.html">Simulador</a></li>
+        <li><a href="../pages/Sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="conteudo">
+    <form id="meuForm" method="get" action="#">
+      <h2>Simule seu salário anual</h2>
+      <label for="area-desejada">Área desejada:</label>
+      <select id="area-desejada" name="area-desejada" required onchange="atualizarSalario()">
+        <option>Front-end</option>
+        <option>Back-end</option>
+        <option>Banco de Dados</option>
+        <option>UX/UI</option>
+        <option>Segurança</option>
+        <option>DevOps</option>
+        <option>Mobile</option>
+        <option>Games</option>
+        <option>IA</option>
+        <option>Outro</option>
+      </select>
+      <br><br>
+      <label for="salario">Salário mensal:</label>
+      <input type="number" id="salario" name="salario" required>
+      <br>
+      <button type="button" onclick="calcular()">Calcular</button>
+      <p id="resultado"></p>
+    </form>
+  </div>
+  <script>
+    function atualizarSalario() {
+    const area = document.getElementById("area-desejada").value;
+    const salario = document.getElementById("salario");
+
+    const salariosMedios = {
+    "Front-end": 3500,
+    "Back-end": 4500,
+    "Banco de Dados": 4000,
+    "UX/UI": 3700,
+    "Segurança": 5000,
+    "DevOps": 5200,
+    "Mobile": 4300,
+    "Games": 3200,
+    "IA": 6000,
+    "Outro": 0
+    };
+
+   if (salariosMedios[area]) {
+    salario.value = salariosMedios[area];
+    }
+  }
+
+    function calcular() {
+      let salario = document.getElementById("salario").value;
+      let total = salario * 12;
+      alert("Salário anual calculado com sucesso!");
+      let resultado = document.getElementById("resultado");
+      resultado.innerHTML =
+      `
+      <p><b>Salário anual:</b> R$ ${total}</p>
+      `
+    }
+    function voltar() {
+      window.location.href = "../index.html";
+      alert("Voltando para a página principal ...")
+    }
+  </script>
+
+  <footer>
+    <p>ConectaTI 2025 - Todos os Direitos Reservados</p>
+    <button type="button" onclick="voltar()">Voltar para a página principal</button>
+    <p class="Desenvolvido">Desenvolvido por alunos da Fumec</p>
+  </footer>
+</body>
+</html>

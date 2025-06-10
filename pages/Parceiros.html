@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Parceiros</title>
+  <style>
+    /* escopo da pagina principal */
+    body {
+      position: relative;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #d9e6f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    h1 {
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 450px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 300px;
+      }
+    }
+
+    header,
+    footer {
+      text-align: center;
+      background-color: #005b96;
+      color: #fff;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .conteudo {
+      flex: 1;
+      padding: 20px;
+      background-color: #d9e6f7;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+     h1.home {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #005b96;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0.25rem;
+      width: auto;
+      max-width: 250px;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    .Desenvolvido {
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+
+    footer button {
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 100px;
+      padding: 100px;
+      justify-items: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 91, 150, 0.3);
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button type="button" onclick="voltar()">
+      <h1 class="home">ConectaTI</h1>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="../pages/Vagas.html">Vagas</a></li>
+        <li><a href="../pages/Parceiros.html">Parceiros</a></li>
+        <li><a href="../pages/cadastro.html">Cadastro</a></li>
+        <li><a href="../pages/localizacao.html">Localização</a></li>
+        <li><a href="../pages/Simulador.html">Landing Page</a></li>
+        <li><a href="../pages/Simulador.html">Simulador</a></li>
+        <li><a href="../pages/Sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Parceiros</h2>
+    <div class="grid">
+      <a href="https://www.fumec.br/"><img src="../images/logo-fumec.png" alt="Parceiro 1"></a>
+      <a href="https://www.microsoft.com/"><img src="../images/microsoft.png" alt="Parceiro 2"></a>
+      <a href="https://www.redbull.com/"><img src="../images/red-bull.png" alt="Parceiro 3"></a>
+      <a href="https://www.dell.com/"><img src="../images/dell.png" alt="Parceiro 4"></a>
+    </div>
+    </div>
+  </main>
+  <script>
+    const campoArquivo = document.getElementById("arquivo");
+    const caixa = document.getElementById("caixaArquivo");
+
+    function voltar() {
+      window.location.href = "../index.html";
+      alert("Voltando para a página principal ...")
+    }
+  </script>
+
+
+<footer>
+  <p>ConectaTI 2025 - Todos os Direitos Reservados</p>
+  <button type="button" onclick="voltar()">Voltar para a página principal</button>
+  <p class="Desenvolvido">Desenvolvido por alunos da Fumec</p>
+</footer>
+</body>
+
+</html>

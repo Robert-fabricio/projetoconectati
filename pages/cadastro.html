@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <style>
+    /* escopo da pagina principal */
+    body {
+      background-color: #d9e6f7;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header,
+    footer {
+      text-align: center;
+      background-color: #005b96;
+      color: #fff;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    button:hover,
+    input[type="submit"]:hover {
+      background-color: #004b7c;
+    }
+    
+
+    .Desenvolvido {
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+    /* fim do escopo principal */
+    /* inicio do estilo da pagina cadastro */
+    input,
+    select {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .conteudo {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 0 4px 25px rgba(0, 91, 150, 0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .caixa-arquivo {
+      border: 2px groove #000;
+      padding: 10px;
+      width: 100%;
+      max-width: 270px;
+      margin: 15px auto;
+      border-radius: 8px;
+      transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    input,
+    select,
+    .caixa-arquivo {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 1rem;
+    }
+
+    input:focus,
+    select:focus {
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .caixa-arquivo.selecionado {
+      border-color: #4caf50;
+      background-color: #f0fff0;
+    }
+
+     h1.home {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    button,
+    input[type="submit"] {
+      padding: 0.75rem 1.5rem;
+      background-color: #005b96;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0.25rem;
+      width: auto;
+      max-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button type="button" onclick="voltar()">
+      <h1 class="home">ConectaTI</h1>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="../pages/Vagas.html">Vagas</a></li>
+        <li><a href="../pages/Parceiros.html">Parceiros</a></li>
+        <li><a href="../pages/cadastro.html">Cadastro</a></li>
+        <li><a href="../pages/localizacao.html">Localização</a></li>
+        <li><a href="../pages/Simulador.html">Landing Page</a></li>
+        <li><a href="../pages/Simulador.html">Simulador</a></li>
+        <li><a href="../pages/Sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="conteudo">
+    <form id="meuForm" method="get" action="#">
+      <h1>Cadastro de Interesse</h1>
+
+      <label for="nome">Nome:</label><br>
+      <input type="text" name="nome" id="nome" placeholder="Informe o Nome"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" placeholder="Informe o Email"><br>
+
+      <label for="area">Área de interesse:</label><br>
+      <select name="area" id="area">
+        <option>Front-end</option>
+        <option>Back-end</option>
+        <option>Banco de Dados</option>
+        <option>UX/UI</option>
+        <option>Segurança</option>
+        <option>DevOps</option>
+        <option>Mobile</option>
+        <option>Games</option>
+        <option>IA</option>
+        <option>Outro</option>
+      </select><br>
+
+      <div id="caixaArquivo" class="caixa-arquivo">
+        <label for="arquivo">Anexar o Currículo</label><br>
+        <input type="file" name="arquivo" id="arquivo">
+      </div>
+
+      <button type="button" onclick="removerArquivo()">Remover Arquivo</button><br><br>
+
+      <input type="submit" value="Enviar" onclick="Enviar()">
+    </form>
+
+    <script>
+      const campoArquivo = document.getElementById("arquivo");
+      const caixa = document.getElementById("caixaArquivo");
+
+      campoArquivo.addEventListener("change", function () {
+        if (campoArquivo.files.length > 0) {
+          caixa.classList.add("selecionado");
+        } else {
+          caixa.classList.remove("selecionado");
+        }
+      });
+
+      function removerArquivo() {
+        campoArquivo.value = "";
+        caixa.classList.remove("selecionado");
+      }
+
+      const form = document.getElementById('meuForm');
+      function Enviar() {
+        alert("Formulário preenchido e enviado com sucesso!!")
+      }
+
+      function voltar() {
+        window.location.href = "../index.html";
+        alert("Voltando para a página principal ...")
+      }
+    </script>
+  </div>
+  <footer>
+    <p>ConectaTI 2025 - Todos os Direitos Reservados</p>
+    <button type="button" onclick="voltar()">Voltar para a página principal</button>
+    <p class="Desenvolvido">Desenvolvido por alunos da Fumec</p>
+  </footer>
+</body>
+
+</html>
