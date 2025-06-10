@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre o Projeto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #d9e6f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .titulo {
+      color: #000;
+    }
+
+    .slogan {
+      color: #005b96;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      color: #000;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    h1.home {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 450px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 300px;
+      }
+    }
+
+    header,
+    footer {
+      text-align: center;
+      background-color: #005b96;
+      color: #fff;
+      width: 100%;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+
+    .conteudo {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      background-color: #d9e6f7;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #005b96;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0.25rem;
+      width: auto;
+      max-width: 250px;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    .Desenvolvido {
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+
+    footer button {
+      margin-top: 10px;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .foto-equipe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+    }
+
+    .foto-equipe img {
+      height: 250px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .foto-legenda {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      max-width: 200px;
+      word-wrap: break-word;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .foto-equipe img {
+      height: 250px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button type="button" onclick="voltar()">
+      <h1 class="home">ConectaTI</h1>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="../pages/Vagas.html">Vagas</a></li>
+        <li><a href="../pages/Parceiros.html">Parceiros</a></li>
+        <li><a href="../pages/cadastro.html">Cadastro</a></li>
+        <li><a href="../pages/localizacao.html">Localização</a></li>
+        <li><a href="../pages/Simulador.html">Landing Page</a></li>
+        <li><a href="../pages/Simulador.html">Simulador</a></li>
+        <li><a href="../pages/Sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="conteudo">
+    <h1 class="titulo">ConectaTI</h1>
+    <p class="slogan">Onde talentos emergentes e oportunidades de TI se encontram</p>
+    <h3>Quem somos?</h3>
+    <p>Nascemos da paixão por tecnologia e da frustração com as barreiras de entrada no mercado. A ConectaTI é uma
+      startup criada por estudantes que acreditam que o futuro da TI se constrói com acesso igualitário às
+      oportunidades. Nossa plataforma foi pensada para ser a escada que faltava entre a sala de aula e o mercado de trabalho, com foco
+      especial em estágios e posições júnior.</p>
+
+    <h3>Por que existimos?</h3>
+    <p>O mercado de tecnologia cresce rapidamente, mas muitos iniciantes enfrentam dificuldades para entrar nele. Nós
+      quebramos essa barreira, oferecendo uma plataforma intuitiva e um networking qualificado para que ambos os lados,
+      candidatos e empresas encontrem a combinação perfeita.</p>
+
+    <h3>Faça parte desta transformação!</h3>
+<p>Se você é um talento em busca da primeira oportunidade ou uma empresa em busca de novos profissionais, junte-se a nós nesta jornada. Juntos, vamos redefinir como o mercado de tecnologia encontra seus futuros líderes.</p>
+<div class="cta-buttons">
+  <button onclick="location.href='../pages/cadastro.html'">Quero me cadastrar</button>
+  <button onclick="location.href='../pages/Parceiros.html'">Seja nosso parceiro</button>
+</div>
+
+    <h2>Nossa Missão</h2>
+    <p>Ser a ponte que transforma potenciais em carreiras de sucesso no universo da tecnologia, conectando talentos
+      promissores a oportunidades que impulsionam o crescimento do setor.</p>
+
+    <h2>Nossa Visão</h2>
+    <p>Revolucionar o acesso ao mercado de TI, tornando-nos referência nacional em conexões de qualidade entre empresas
+      inovadoras e os profissionais que vão moldar o futuro digital.</p>
+
+    <h2>Nossos Valores</h2>
+    <ul>
+      <li><strong>Oportunidade para Todos:</strong> Acreditamos no potencial de cada talento, independente de background
+        ou experiência prévia.</li>
+      <li><strong>Conexões que Transformam:</strong> Não apenas preenchemos vagas, mas construímos relações
+        profissionais duradouras.</li>
+      <li><strong>Inovação Contínua:</strong> Estamos sempre evoluindo para oferecer a melhor experiência em
+        recrutamento tecnológico.</li>
+      <li><strong>Transparência:</strong> Agimos com clareza e honestidade em todas as nossas interações.</li>
+      <li><strong>Impacto Social:</strong> Medimos nosso sucesso pelo crescimento coletivo da comunidade de TI.</li>
+    </ul>
+    <p>ConectaTI: Conectando Talentos ao Futuro da Tecnologia</p>
+
+    <h3>Equipe ConectaTI</h3>
+    <p>Conheça a equipe por trás da ConectaTI, formada por estudantes dedicados e apaixonados por tecnologia.</p>
+
+    <div class="galeria">
+      <div class="foto-equipe">
+        <img src="../images/robert.jpg" alt="Foto de Robert, Desenvolvedor Front-end">
+        <p class="foto-legenda">Robert <br>Desenvolvedor Front-end</p>
+      </div>
+      <div class="foto-equipe">
+        <img src="../images/marcelo.jpg" alt="Foto de Marcelo, Estruturação do conteúdo">
+        <p class="foto-legenda">Marcelo <br>Estruturação do conteúdo</p>
+      </div>
+      <div class="foto-equipe">
+        <img src="../images/Nycollas.jpg" alt="Foto de Nycollas, Desenvolvedor Front-end">
+        <p class="foto-legenda">Nycollas <br>Desenvolvedor Front-end</p>
+      </div>
+      <div class="foto-equipe">
+        <img src="../images/gabriel.jpg" alt="Foto de Gabriel, Design">
+        <p class="foto-legenda">Gabriel <br>Design</p>
+      </div>
+    </div>
+
+    <p>Por trás da ConectaTI, está um grupo dedicado a tornar essa missão realidade. <br>
+      Somos um time de estudantes apaixonados por tecnologia e inovação, unidos pelo desejo de transformar o mercado de
+      trabalho em TI. Cada membro traz habilidades únicas, desde desenvolvimento front-end até design e estruturação de
+      conteúdo. Nosso time é formado por estudantes da FUMEC, cada um com uma paixão única pela tecnologia e um
+      compromisso
+      inabalável com a inclusão. Juntos, estamos moldando o futuro da tecnologia, um passo de cada vez. Nosso time é
+      formado por estudantes da FUMEC, cada um com uma paixão única pela tecnologia e um compromisso
+      inabalável com a inclusão. Juntos, estamos moldando o futuro da tecnologia, um passo de cada vez. Juntos,
+      combinamos técnica, criatividade e vontade de fazer a diferença.</p>
+  </div>
+
+
+  <script>
+    function voltar() {
+      alert("Voltando para a página principal ...");
+      window.location.href = "../index.html";
+    }
+  </script>
+  <footer>
+    <p>ConectaTI 2025 - Todos os Direitos Reservados</p>
+    <button type="button" onclick="voltar()">Voltar para a página principal</button>
+    <p class="Desenvolvido">Desenvolvido por alunos da Fumec</p>
+  </footer>
+</body>
+
+</html>
